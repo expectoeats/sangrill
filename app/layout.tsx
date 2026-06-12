@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Fraunces, Syne, Outfit } from "next/font/google";
 import "./globals.css";
 import { CustomCursor } from "@/components/ui/custom-cursor";
+import ReferralBanner from "@/components/ReferralBanner";
 
 // Display / Hero headings — dramatic, optical-size variable font
 const fraunces = Fraunces({
@@ -53,6 +54,7 @@ export default function RootLayout({
       <body className="min-h-full bg-paper text-ink font-sans overflow-x-hidden">
         <CustomCursor />
         {children}
+              <ReferralBanner />
       </body>
     </html>
   );
